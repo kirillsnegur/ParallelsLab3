@@ -2,7 +2,7 @@ import java.io.Serializable;
 
 public class RaceData implements Serializable {
     private float timeDelay, cancelValue;
-    private int counterTotal, counterDelay;
+    private int counterTotal, counterFails;
 
     RaceData(String timeDelay, float cancelValue){
         if (timeDelay != ""){
@@ -11,9 +11,9 @@ public class RaceData implements Serializable {
         this.cancelValue = cancelValue;
     }
 
-    RaceData(float timeDelay, int counter, int countDelay){
+    RaceData(float timeDelay, int counterTotal, int counterFail){
         this.timeDelay = timeDelay;
-        this.counter = counter;
-        this.cancelValue = c
+        this.counterTotal = counterTotal;
+        this.counterFails = counterFail;
     }
 }
