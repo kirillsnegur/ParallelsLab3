@@ -6,7 +6,7 @@ public class CSVParser {
         return str.toString().split(",");
     };
 
-    public static String[] parseAirportString(Text str){
+    public static String[] parseAirportString(String str){
         return str.toString().split(",(?=\")");
     };
 
