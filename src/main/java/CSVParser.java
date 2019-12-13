@@ -10,10 +10,7 @@ public class CSVParser {
     public static String[] parseAirportString(String str){
         return str.toString().split(",(?=\")");
     };
-
-    public static boolean isDesription(String v){
-        return  (v.equals("Code,Description"));
-    }
+    
 
     public static JavaRDD<String> replaceRDDHeader(JavaRDD<String> str){
         String header = str.first();
