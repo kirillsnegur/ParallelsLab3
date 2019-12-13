@@ -23,7 +23,7 @@ public class AirplanesSparkApp {
         JavaPairRDD<String,String> airportsPair = airportsSplit.mapToPair(s -> new Tuple2<>(s[0],s[1]));
 
         JavaPairRDD<Tuple2<String,String>, RaceData> flightsReduce = flightsPair.reduceByKey();
-        JavaPairRDD<Tuple2<String,String>, RaceData> flightsReduce = flightsPair.reduceByKey();
+        JavaPairRDD<Tuple2<String,String>, RaceData> airportReduce = airportsPair.reduceByKey();
     }
 
 }
