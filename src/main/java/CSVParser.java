@@ -1,4 +1,5 @@
 import org.apache.hadoop.io.Text;
+import org.apache.spark.api.java.JavaRDD;
 
 public class CSVParser {
 
@@ -10,17 +11,14 @@ public class CSVParser {
         return str.toString().split(",(?=\")");
     };
 
-//    public static boolean isArrDelay(String v){
-//        return  (v.equals("\"ARR_DELAY\""));
-//    }
-//
-////    public static boolean isDestAirport(String v){
-////        return  (v.equals("\"DEST_AIRPORT_ID\""));
-////    }
-//
-//    public static boolean isDesription(String v){
-//        return  (v.equals("Code,Description"));
-//    }
+    public static boolean isDesription(String v){
+        return  (v.equals("Code,Description"));
+    }
+
+    public static JavaRDD<String> replaceRDDHeader(JavaRDD<String> str){
+        String header = str.first();
+        return str.filter(row -> !row.equals(header));
+    }
 
     public static String replaceQuotes(String str){
         return str.replace("\"","");

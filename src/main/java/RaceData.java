@@ -5,7 +5,7 @@ public class RaceData implements Serializable {
     private int counterTotal, counterFail;
 
     RaceData(String timeDelay, float failValue){
-        if (timeDelay != ""){
+        if (!timeDelay.isEmpty()){
             this.timeDelay = Float.parseFloat(timeDelay);
         } else this.timeDelay = 0;
         this.failValue = failValue;
@@ -18,5 +18,13 @@ public class RaceData implements Serializable {
         this.timeDelay = timeDelay;
         this.counterTotal = counterTotal;
         this.counterFail = counterFail;
+        this.failsPersent = (float) counterFail/counterTotal;
     }
+
+    public float getTimeDelay() {return timeDelay;}
+    public float getFailsPersent() {return failsPersent;}
+    public float getFailValue() {return failValue;}
+
+    public int getCounterFail() {return counterFail;}
+    public int getCounterTotal() {return counterTotal;}
 }
