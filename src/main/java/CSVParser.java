@@ -23,6 +23,6 @@ public class CSVParser {
 //    }
 
     public static String replaceQuotes(String str){
-        return parseInt(str.replace("\"",""));
+        return str.replace("\"",""));
     }
 }
