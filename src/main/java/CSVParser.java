@@ -8,7 +8,7 @@ public class CSVParser {
     };
 
     public static String[] parseAirportString(String str){
-        return str.toString().split(",(?=\")");
+        return str.split(",(?=\")");
     };
 
 
