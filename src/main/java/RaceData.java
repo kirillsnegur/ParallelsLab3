@@ -18,7 +18,6 @@ public class RaceData implements Serializable {
         this.timeDelay = timeDelay;
         this.counterTotal = counterTotal;
         this.counterFail = counterFail;
-        
         this.failsPersent = (float) counterFail/counterTotal;
     }
 
