@@ -1,4 +1,3 @@
-import org.apache.hadoop.io.Text;
 import org.apache.spark.api.java.JavaRDD;
 
 public class CSVParser {
