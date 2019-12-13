@@ -11,5 +11,9 @@ public class RaceData implements Serializable {
         this.cancelValue = cancelValue;
     }
 
-    RaceData(float timeDelay, int countR)
+    RaceData(float timeDelay, int counter, int countDelay){
+        this.timeDelay = timeDelay;
+        this.counter = counter;
+        this.cancelValue = c
+    }
 }
