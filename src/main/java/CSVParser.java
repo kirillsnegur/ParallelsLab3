@@ -2,15 +2,14 @@ import org.apache.hadoop.io.Text;
 
 public class CSVParser {
 
-    public static String[] parseString(String str){
+    public static String[] parseFlightsString(String str){
         return str.toString().split(",");
     };
 
-//    public static String[] parseStringQuote(Text str){
-//        return str.toString().split(",(?=\")");
-//    };
-//
-//
+    public static String[] parseAirportString(Text str){
+        return str.toString().split(",(?=\")");
+    };
+
 //    public static boolean isArrDelay(String v){
 //        return  (v.equals("\"ARR_DELAY\""));
 //    }
@@ -23,7 +22,7 @@ public class CSVParser {
 //        return  (v.equals("Code,Description"));
 //    }
 //
-//    public static int getCell(String str){
-//        return Integer.parseInt(str.replace("\"",""));
-//    }
+    public static int clearFromQuotes(String str){
+        return Integer.parseInt(str.replace("\"",""));
+    }
 }

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12e3bda7-c2ac-47f1-a991-d8978c5d127a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/AirplanesSparkApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AirplanesSparkApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CSVParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CSVParser.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -39,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AirplanesSparkApp.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AirplanesSparkApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/AirplanesSparkApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+            <state relative-caret-position="312">
+              <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,14 +50,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CSVParser.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CSVParser.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/CSVParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="360">
+              <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="37" />
               <folding>
                 <element signature="e#109#110#0" expanded="true" />
                 <element signature="e#157#158#0" expanded="true" />
+                <element signature="e#216#217#0" expanded="true" />
+                <element signature="e#270#271#0" expanded="true" />
+                <element signature="e#664#665#0" expanded="true" />
+                <element signature="e#725#726#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,8 +110,8 @@
         <option value="$PROJECT_DIR$/.idea/compiler.xml" />
         <option value="$PROJECT_DIR$/src/main/java/RDDManipulations.java" />
         <option value="$PROJECT_DIR$/src/main/java/RaceData.java" />
-        <option value="$PROJECT_DIR$/src/main/java/CSVParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/AirplanesSparkApp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CSVParser.java" />
       </list>
     </option>
   </component>
@@ -277,12 +280,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1576224559328</updated>
-      <workItem from="1576224563309" duration="10161000" />
+      <workItem from="1576224563309" duration="10583000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10161000" />
+    <option name="totallyTimeSpent" value="10583000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="294" y="23" width="1013" height="1057" extended-state="0" />
@@ -375,23 +378,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CSVParser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/AirplanesSparkApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="312">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
           <folding>
-            <element signature="e#109#110#0" expanded="true" />
-            <element signature="e#157#158#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/AirplanesSparkApp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/CSVParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="23" column="13" lean-forward="true" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        <state relative-caret-position="360">
+          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="37" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#109#110#0" expanded="true" />
+            <element signature="e#157#158#0" expanded="true" />
+            <element signature="e#216#217#0" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+            <element signature="e#664#665#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
           </folding>
         </state>
       </provider>
