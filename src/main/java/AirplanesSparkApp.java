@@ -28,7 +28,9 @@ public class AirplanesSparkApp {
         });
         final Broadcast<Map<String, String>> airportsBroadcasted = sc.broadcast(airportsPair.collectAsMap());
 
-        JavaPairRDD<String,String> flightsPair = flightsSplit.mapToPair(s -> new Tuple2<>(s[0],s[1]));
+        JavaPairRDD<String,String> flightsPair = flightsSplit.mapToPair(s->{
+            
+        });
 
 
 //        JavaPairRDD<Tuple2<String,String>, RaceData> flightsReduce = flightsPair.reduceByKey();
