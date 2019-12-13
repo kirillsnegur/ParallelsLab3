@@ -1,3 +1,5 @@
-public class AirplanesSparkApp {sss
-
+public class AirplanesSparkApp {
+    public static void main(String[] args) {
+        
+    }
 }
