@@ -22,7 +22,7 @@ public class CSVParser {
 //        return  (v.equals("Code,Description"));
 //    }
 //
-    public static int clearFromQuotes(String str){
+    public static int replaceQuotes(String str){
         return Integer.parseInt(str.replace("\"",""));
-    }
+    }   
 }
