@@ -6,8 +6,7 @@ public class CSVParser {
         return str.split(",");
     };
 
-    public static String[] parseAirportString(String str){ return str.split(",(?=\")");
-    };
+    public static String[] parseAirportString(String str) { return str.split("\",\""); }
 
 
     public static JavaRDD<String> replaceRDDHeader(JavaRDD<String> str){
