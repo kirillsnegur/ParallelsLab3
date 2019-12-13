@@ -23,7 +23,7 @@ public class RaceData implements Serializable {
 
     public float getTimeDelay() {return timeDelay;}
     public float getFailsPersent() {return failsPersent;}
-    public float getFailValue() {return failValue;}
+//    public float getFailValue() {return failValue;}
 
     public int getCounterFail() {return counterFail;}
     public int getCounterTotal() {return counterTotal;}
