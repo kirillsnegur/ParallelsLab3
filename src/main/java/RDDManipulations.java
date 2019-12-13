@@ -9,7 +9,7 @@ public class RDDManipulations {
 
     public static JavaPairRDD<String,String> mapAirports(JavaRDD<String> airports){
         return airports.mapToPair(
-                (s -> {
+                ((String s) -> {
                     String[] airportsAttr = CSVParser.parseAirportString(s);
                     String airportCode = airportsAttr[0];
                     String airportDscr = airportsAttr[1];
