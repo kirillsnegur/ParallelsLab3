@@ -25,7 +25,7 @@ public class AirplanesSparkApp {
             return new Tuple2<String, String>(CSVParser.replaceQuotes(airportAttr[0]),CSVParser.replaceQuotes(airportAttr[1]));
         });
 
-        final Broadcast<Map<String, AirportData>> airportsBroadcasted = sc.broadcast(stringAirportDataMap);
+        final Broadcast<Map<String, String  >> airportsBroadcasted = sc.broadcast(stringAirportDataMap);
 
 //        JavaPairRDD<Tuple2<String,String>, RaceData> flightsReduce = flightsPair.reduceByKey();
 //        JavaPairRDD<Tuple2<String,String>, RaceData> airportReduce = airportsPair.reduceByKey();
