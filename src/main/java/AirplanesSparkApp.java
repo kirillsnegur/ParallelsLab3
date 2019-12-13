@@ -16,8 +16,8 @@ public class AirplanesSparkApp {
         SparkConf conf = new SparkConf().setAppName("lab3");
         JavaSparkContext sc = new JavaSparkContext(conf);
 
-        JavaRDD<String> flights = CSVParser.replaceRDDHeader(sc.textFile("Flights.csv"));
-        JavaRDD<String> airports = CSVParser.replaceRDDHeader(sc.textFile("Airports.csv"));
+        JavaRDD<String> flights = CSVParser.replaceRDDHeader(sc.textFile("/Users/kir_snegir/IdeaProjects/ParallelsLab3/Flights.csv"));
+        JavaRDD<String> airports = CSVParser.replaceRDDHeader(sc.textFile("/Users/kir_snegir/IdeaProjects/ParallelsLab3/Airports.csv"));
 
         JavaPairRDD<String,String> airportsPair = RDDManipulations.mapAirports(airports);
 
