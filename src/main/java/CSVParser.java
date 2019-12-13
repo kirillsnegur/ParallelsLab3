@@ -4,7 +4,7 @@ import org.apache.spark.api.java.JavaRDD;
 public class CSVParser {
 
     public static String[] parseFlightsString(String str){
-        return str.toString().split(",");
+        return str.split(",");
     };
 
     public static String[] parseAirportString(String str){
