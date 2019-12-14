@@ -25,7 +25,7 @@ public class AirplanesSparkApp {
 
         JavaPairRDD<Tuple2,Tuple2> flightsPair = RDDManipulations.mapFlights(flights,airportsBroadcasted);
 
-        flightsPair.saveAsTextFile("/Users/kir_snegir/IdeaProjects/ParralelsLab2/output");
+        flightsPair.saveAsTextFile("output");
     };
 }
 
